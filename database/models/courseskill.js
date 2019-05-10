@@ -8,9 +8,6 @@ module.exports = (sequelize, DataTypes) => {
     },
     {}
   );
-  CourseSkill.associate = function(models) {
-    CourseSkill.belongsTo(models.Skill),
-    CourseSkill.belongsTo(models.Course)
-  };
+  CourseSkill.associate = function(models) {};
   return CourseSkill;
 };

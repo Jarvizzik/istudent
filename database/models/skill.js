@@ -8,9 +8,12 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   Skill.associate = function(models) {
-    Skill.hasMany(models.StudentSkill),
-    Skill.hasMany(models.VacancySkill),
-    Skill.hasMany(models.CourseSkill)
+    Skill.belongsToMany(models.Student, {
+      through: models.StudentSkill,
+      foreignKey: "skillID"
+    });
+    Skill.hasMany(models.VacancySkill);
+    Skill.hasMany(models.CourseSkill);
   };
   return Skill;
 };

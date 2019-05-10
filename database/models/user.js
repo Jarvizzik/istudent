@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
       email: DataTypes.STRING,
       password: DataTypes.STRING,
       avatarUrl: DataTypes.STRING,
-      phoneNumber: DataTypes.STRING,
+      phoneNumber: DataTypes.STRING
     },
     {
       hooks: {
@@ -25,11 +25,14 @@ module.exports = (sequelize, DataTypes) => {
   };
 
   User.associate = function(models) {
-    User.hasOne(models.Student, {foreignKey: 'id'}),
-    User.hasOne(models.Company, {foreignKey: 'id'}),
-    User.hasOne(models.Recruiter)
-    User.hasMany(models.UserAuth),
-    User.hasOne(models.UserRole)
+    User.belongsToMany(models.Role, {
+      through: models.UserRole,
+      foreignKey: "userID"
+    });
+    User.hasOne(models.Student, { foreignKey: "id" });
+    User.hasOne(models.Company, { foreignKey: "id" });
+    User.hasOne(models.Recruiter);
+    User.hasMany(models.UserAuth);
   };
   return User;
 };

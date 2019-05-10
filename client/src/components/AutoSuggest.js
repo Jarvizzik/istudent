@@ -92,6 +92,7 @@ export class AutoSuggest extends React.Component {
           value: '',
           suggestions: []
       };
+      this.onChange = this.onChange.bind(this);
   }
 
   onChange = (_, { newValue }) => {
@@ -132,7 +133,7 @@ export class AutoSuggest extends React.Component {
 
       return (
           <div>
-              {id === 'type-city' ? (<Autosuggest
+              {id === 'city' ? (<Autosuggest
                   id={id}
                   suggestions={suggestions}
                   onSuggestionsFetchRequested={this.onSuggestionsFetchRequestedCity}
@@ -141,6 +142,7 @@ export class AutoSuggest extends React.Component {
                   renderSuggestion={renderSuggestion}
                   inputProps={inputProps}
               />) : (<Autosuggest
+                  required
                   id={id}
                   suggestions={suggestions}
                   onSuggestionsFetchRequested={this.onSuggestionsFetchRequestedUni}

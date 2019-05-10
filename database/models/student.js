@@ -5,21 +5,35 @@ module.exports = (sequelize, DataTypes) => {
     {
       firstName: DataTypes.STRING,
       lastName: DataTypes.STRING,
-      city: DataTypes.INTEGER
+      city: DataTypes.STRING
     },
     {}
   );
   Student.associate = function(models) {
-    Student.belongsTo(models.User),
-    Student.hasOne(models.City),
-    Student.hasMany(models.Education),
-    Student.hasMany(models.AdditionalEducation),
-    Student.hasMany(models.StudentProject),
-    Student.hasMany(models.WorkExperience),
-    Student.hasMany(models.StudentSkill),
-    Student.hasMany(models.StudentTechnology),
-    Student.hasMany(models.StudentVacancy),
-    Student.hasMany(models.StudentCourse)
+    Student.belongsTo(models.User);
+    Student.belongsToMany(models.Project, {
+      through: models.StudentProject,
+      foreignKey: "studentID"
+    });
+    Student.belongsToMany(models.Skill, {
+      through: models.StudentSkill,
+      foreignKey: "studentID"
+    });
+    Student.belongsToMany(models.Technology, {
+      through: models.StudentTechnology,
+      foreignKey: "studentID"
+    });
+    Student.belongsToMany(models.Vacancy, {
+      through: models.StudentVacancy,
+      foreignKey: "studentID"
+    });
+    Student.belongsToMany(models.Course, {
+      through: models.StudentCourse,
+      foreignKey: "studentID"
+    });
+    Student.hasMany(models.Education);
+    Student.hasMany(models.AdditionalEducation);
+    Student.hasMany(models.WorkExperience);
   };
   return Student;
 };

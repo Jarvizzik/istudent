@@ -8,9 +8,6 @@ module.exports = (sequelize, DataTypes) => {
     },
     {}
   );
-  StudentHasManyRoles.associate = function(models) {
-    StudentHasManyRoles.belongsTo(models.StudentProject),
-    StudentHasManyRoles.belongsTo(models.ProjectRole)
-  };
+  StudentHasManyRoles.associate = function(models) {};
   return StudentHasManyRoles;
 };

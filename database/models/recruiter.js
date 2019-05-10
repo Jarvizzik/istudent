@@ -8,8 +8,8 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   Recruiter.associate = function(models) {
-    Recruiter.belongsTo(models.User),
-    Recruiter.belongsTo(models.Company)
+    Recruiter.belongsTo(models.User);
+    Recruiter.belongsTo(models.Company);
   };
   return Recruiter;
 };

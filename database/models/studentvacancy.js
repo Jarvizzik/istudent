@@ -8,9 +8,6 @@ module.exports = (sequelize, DataTypes) => {
     },
     {}
   );
-  StudentVacancy.associate = function(models) {
-    StudentVacancy.belongsTo(models.Student),
-    StudentVacancy.belongsTo(models.Vacancy)
-  };
+  StudentVacancy.associate = function(models) {};
   return StudentVacancy;
 };

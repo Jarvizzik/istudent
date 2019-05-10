@@ -12,11 +12,20 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   Vacancy.associate = function(models) {
-    Vacancy.belongsTo(models.Company),
-    Vacancy.belongsTo(models.Position),
-    Vacancy.hasMany(models.StudentVacancy),
-    Vacancy.hasMany(models.VacancySkill),
-    Vacancy.hasMany(models.VacancyTechnology)
+    Vacancy.belongsTo(models.Company);
+    Vacancy.belongsTo(models.Position);
+    Vacancy.belongsToMany(models.Student, {
+      through: models.StudentVacancy,
+      foreignKey: "vacancyID"
+    });
+    Vacancy.belongsToMany(models.Skill, {
+      through: models.VacancySkill,
+      foreignKey: "vacancyID"
+    });
+    Vacancy.belongsToMany(models.Technology, {
+      through: models.VacancyTechnology,
+      foreignKey: "vacancyID"
+    });
   };
   return Vacancy;
 };

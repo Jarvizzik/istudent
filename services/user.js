@@ -1,8 +1,7 @@
 const User = require("../database/models").User;
 
 exports.findById = id => {
-  const user = User.findOne({ where: { id } });
-  return user;
+  return User.findOne({ where: { id } });
 };
 
 exports.findByEmail = email => {

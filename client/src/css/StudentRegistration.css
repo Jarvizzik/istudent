@@ -1,499 +1,561 @@
 .main2 {
-    position:relative;
-    font-family: Helvetica, sans-serif;
-    background-color: #e9ecf1;
-    margin-top:8vh;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    color: #000;
-    z-index: 0;
-  }
-  
-  .but{
-    border-collapse: separate;
-    border: 3px solid white;
-    border-radius: 0%;
-    background-color: #e9ecf1; 
-    color:black;
-    height: 6vh;
-    width: 14vw;
-  }
-  
-  .but:hover, .butUpload:hover, .react-autosuggest__input:hover, .achievementText:hover{
-    border: 3px solid #78cc1f;
-  }
-  
-  .ownButAdd:hover, .ownButDel:hover, .additionalButAdd:hover, .additionalButDel:hover, .additionalButAddAchievement:hover, .hideBut:hover{
-    color:#fff;
-    background-color:#000;
-  }
-  
-  /* Green rect */
-  .rightTitle2 {
-    position:absolute;
-    font-size: 3.6vmin;
-    font-weight: normal;    
-    top:0.3vmin;
-    margin-left:5.5vmin;
-    color: white;
-    z-index: 50;
-  }
-  
-  .rectangle2 {
-    position: absolute;
-    top:-1vmin;
-    height: 9.5vmin;
-    width: 47vmin;
-    margin-left:12vw;
-    background-color: #78cc1f;
-    box-shadow:rgba(0, 0, 0, 0.2) -0.5vmin 0.7vmin 0.6vmin 0px;
-    z-index: 1;
-  }
-  
-  .emptyRectangle2 {
-    position:relative;
-    height: 10vmin;
-    width: 46vmin;
-    margin-left:-1.5vw;
-    margin-top:2.5vh;
-    border:0.8vmin solid #fff;
-    box-shadow:rgba(0, 0, 0, 0.05) -0.5vmin 0.7vmin 0.6vmin 0px;
-    z-index: 1;
-  }
-  
-  /* Div with all forms with black rectangles */
-  .mainInfo{
-    margin-top: 18vh;
-    margin-left: 15vw; 
-    width: 50vw;
-  }
-  
-  /* General info */
-  .rectGeneral{
-    height: 6vmin;
-    width: 25vmin;
-    margin-right: 400vmin;
-    background-color: #000;
-    box-shadow:rgba(150, 107, 107, 0.15) -0.5vmin 0.7vmin 0.6vmin 0px;
-    z-index: 1;
-  }
-  
-  .rectText{
-    font-size: 2.3vmin;
-    font-weight: normal;    
-    margin-left:2.25vmin;
-    padding-top: 1.5vmin;
-    color: white;
-  }
-  
-  .infoRow{
-    padding: 0.2vw;
-  }
-  
-  .generalFormStyle{
-    margin-top: 2vh; 
-    margin-left: 10vw; 
-    width: 45vw;
-  }
-  
-  /* additional information */
-  .rectAdditional{
-    height: 6.2vmin;
-    width: 28vmin;
-    margin-top:4.5vh;
-    background-color: #000;
-    box-shadow:rgba(150, 107, 107, 0.15) -0.5vmin 0.7vmin 0.6vmin 0px;
-    z-index: 1;
-  }
-  
-  .additionalRectText{
-    font-size: 2.3vmin;
-    font-weight: normal;    
-    margin-left:2.25vmin;
-    padding-top: 1.8vmin;
-    color: white;
-  }
-  
-  .additionalRow{
-    margin-left:1vw;
-    margin-top:0vh;
-  }
-  
-  .additionalformStyle{
-    margin-top: -6.2vmin; 
-    margin-left: 28vmin; 
-    margin-bottom: 10vmin;
-    width: 63.8vmax;
-    height: auto;
-    border:0.2vmin solid #000;
-  }
-  
-  .additionalButton{
-    color:#6c757d;
-    height:5.8vmin;
-    width:20vmin;
-    border:0;
-    font-size:2.3vmin;
-    background-color:#e9ecf1;
-  }
-  
-  .additionalButtonTrue{
-    color:#6c757d;
-    height:5.8vmin;
-    margin-left: 1.9vmin; 
-    width:20vmin;
-    border:0;
-    font-size:2.3vmin;
-    background-color:#e9ecf1;
-  }
-  
-  .additionalButtonFalse{
-    color:#fff;
-    height:5.8vmin;
-    margin-left: 1.9vmin; 
-    width:20vmin;
-    border:0;
-    font-size:2.3vmin;
-    background-color:#000;
-  }
-  
-  .additionalButton:hover{
-    color:white;
-    background-color: black;
-  }
-  
-  .additionalButAddAchievement{
-    height:5.8vmin;
-    margin-top:0.5vh;
-    margin-left: 59vmax; 
-    border:0;
-    font-size:2.3vmin;
-    color:#6c757d;
-    background-color:#e9ecf1;
-    width:7vmin;
-  }
-  
-  .additionalButAdd{
-    height:5.8vmin;
-    margin-top:4.5vh;
-    margin-left: 3vmin; 
-    border:0;
-    font-size:2.3vmin;
-    color:#6c757d;
-    background-color:#e9ecf1;
-    width:7vmin;
-  }
-  
-  .additionalButDel{
-    height:5.8vmin;
-    margin-top:4.5vh;
-    margin-left: 1vmin; 
-    border:0;
-    font-size:2.3vmin;
-    color:#6c757d;
-    background-color:#e9ecf1;
-    width:7vmin;
-  }
-  
-  #additionalDropDown{
-    background-color: #e9ecf1; 
-    color:black; 
-    border: 3px solid white;
-    border-radius: 0;
-  }
-  
-  .achievementText{
-    border-collapse: separate;
-    border: 3px solid white;
-    border-radius: 0%;
-    background-color: #e9ecf1; 
-    color:black;
-    height: 20vh;
-    width: 25vw;
-  }
-  
-  .skillsText{
-    margin-top: 1vh;
-    margin-left: 3vmax;
-    font-size: 3vmin;
-    font-weight: 600;  
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-    color:#000;
-  }
-  
-  .technologyText{
-    margin-top: 20vh;
-    margin-left: 3vmax;
-    font-size: 3vmin;
-    font-weight: 600;  
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-    color:#000;
-  }
-  
-  .hideBut{
-    height:5.8vmin;
-    border:0;
-    font-size:2.3vmin;
-    color:#6c757d;
-    background-color:#e9ecf1;
-    width:10vmin;
-  }
-  
-  
-  
-  .line{
-    font-family: "Times New Roman";
-    margin: 0 0.8vw;
-    color:#6c757d;
-    font-size: 1.9vw;
-  }
-  
-  .but{
-    border-collapse: separate;
-    border: 3px solid white;
-    border-radius: 0%;
-    background-color: #e9ecf1; 
-    color:black;
-    height: 6vh;
-    width: 14vw;
-  }
-  
-  .butUpload{
-    border-collapse: separate;
-    border: 3px solid white;
-    border-radius: 0%;
-    background-color: #e9ecf1; 
-    color:black;
-    height: 6vh;
-    width: 14vw;
-    margin-top:0.2vmax;
-  }
-  
-  .form-control:focus {
-    border-color: #78cc1f;
-    box-shadow: 0 0 0 0;
-  }
-  
-  /*own projects*/
-  .ownformStyle{
-    margin-top: -6.3vmin; 
-    margin-left: 19.75vmin; 
-    width: 65vmax;
-    height: auto;
-    border:0.2vmin solid #000;
-  }
-  
-  .ownRow{
-    margin-left:2vw;
-    margin-top:2vh;
-  }
-  
-  .rectOwn{
-    height: 6.3vmin;
-    width: 19.75vmin;
-    margin-top:2vh;
-    background-color: #000;
-    box-shadow:rgba(150, 107, 107, 0.15) -0.5vmin 0.7vmin 0.6vmin 0px;
-    z-index: 1;
-  }
-  
-  .ownText{
-    margin-top: 0.9vh;
-    padding-right: 0.8vw;
-    font-size: 3vmin;
-    font-weight: normal;  
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-    color:#6c757d;
-  }
-  
-  .ownline{
-    font-family: "Times New Roman";
-    margin: 0 0.8vw 0 0.8vw;
-    color:#6c757d;
-    font-size: 1.9vw;
-  }
-  
-  .ownFormStyle{
-    margin-top: 2vh; 
-    margin-left: 2vw; 
-    width: 45vw;
-    z-index: 0;
-  }
-  
-  .ownButAdd{
-    height:5.8vmin;
-    margin-top:0.4vh;
-    margin-left: 3vmin; 
-    border:0;
-    font-size:2.3vmin;
-    color:#6c757d;
-    background-color:#e9ecf1;
-    width:7vmin;
-  }
-  
-  .ownButDel{
-    height:5.8vmin;
-    margin-top:0.4vh;
-    margin-left: 5vmin;
-    margin-right: -1vmin; 
-    border:0;
-    font-size:2.3vmin;
-    color:#6c757d;
-    background-color:#e9ecf1;
-    width:7vmin;
-  }
-  
-  .ownUploadText{
-    float:left;
-    margin-left: 0.4vw;
-    margin-top: 0.3vh;
-  }
-  
-  #ownUploadIcon{
-    font-size: 1.5vw; 
-    margin-left:2vmax; 
-  }
-  
-  /* autofill */
-  body {
-    height: 10vh;
-  }
-  
-  .react-autosuggest__container {
-    position: relative;
-  }
-  
-  .react-autosuggest__input {
-    border-collapse: separate;
-    border: 3px solid white;
-    border-radius: 0%;
-    background-color: #e9ecf1;
-    width: 14vw; 
-    color:black;
-    height: 6vh;
-    padding: 0 12px;
-    font-family: Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-  }
-  
-  .react-autosuggest__input:focus {
-    background-color: white;
-    border: 3px solid #78cc1f;
-    outline: none;
-  }
-  
-  .react-autosuggest__container--open .react-autosuggest__input {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  
-  .react-autosuggest__suggestions-container {
-    display: none;
-  }
-  
-  .react-autosuggest__container--open .react-autosuggest__suggestions-container {
-    display: block;
-    position: absolute;
-    top: 51px;
-    width: 16vw;
-    border: 1px solid #aaa;
-    background-color: #fff;
-    font-family: Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    z-index: 2;
-  }
-  
-  .react-autosuggest__suggestions-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  
-  .react-autosuggest__suggestion {
-    cursor: pointer;
-    padding: 1px 20px;
-  }
-  
-  .react-autosuggest__suggestion:hover{
-    background-color: #78cc1f;
-    color:white;
-  }
-  
-  .react-autosuggest__suggestion:hover .highlight{
-    color:white;
-  }
-  
-  .react-autosuggest__suggestion:not(:first-child) {
-    border-top: 1px solid #ddd;
-  }
-  
-  .react-autosuggest__suggestion--focused {
-    background-color: #0C7EAF;
-    color: #fff;
-  }
-  
-  .suggestion-content {
-    display: flex;
-    align-items: center;
-    background-repeat: no-repeat;
-  }
-  
-  .name {
-    margin-left: 1vw;
-    line-height: 45px;
-  }
-  
-  .highlight {
-    color: #78cc1f;
-    font-weight: bold;
-  }
-  
-  .react-autosuggest__suggestion--focused .highlight {
-    color: #120000;
-  }
-  
-  
-  /*other...*/
-  .hideReactJSX{
-    display: none;
-  }  
-  
-  .buttonsReg {
-    position: relative;
-    margin-left: 55vmax;
-    margin-top: -2vmin;
-    margin-bottom: 3vmin;
-    align-self:center;
-    flex-direction: row;
-    z-index:1000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-  }
-  
-  .createButtonReg{
-    height:7vmin;
-    width:17vmax;
-    border:0px;
-    font-size:3vmin;
-    color:#fff;
-    box-shadow:rgba(0, 0, 0, 0.2) -0.5vmin 0.7vmin 0.6vmin 0px;
-    background-color:#78cc1f;
-    display:inline;
-  }
-  
-  .skipButtonReg{
-    height:7vmin;
-    width:14vmax;
-    border:0px;
-    font-size:3vmin;
-    color:#fff;
-    box-shadow: rgba(0, 0, 0, 0.2) -0.5vmin 0.7vmin 0.6vmin 0px;
-    background-color: black;
-    display:inline;
-  }
+  position:relative;
+  font-family: Helvetica, sans-serif;
+  background-color: #e9ecf1;
+  margin-top:8vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: #000;
+  z-index: 0;
+}
+
+.but, #but{
+  border-collapse: separate;
+  border: 3px solid white;
+  border-radius: 0%;
+  background-color: #e9ecf1; 
+  color:#6c757d;
+  height: 6vh;
+  width: 14vw;
+  padding: 0 0 0 0.8vmax;
+  font-size: 1vw;
+}
+
+.error {
+  color: #78cc1f;
+}
+
+.but:hover, #but:hover, .butUpload:hover, .react-autosuggest__input:hover, .achievementText:hover,#uploadBut:hover{
+  border: 3px solid #78cc1f;
+}
+
+.ownButAdd:hover, .ownButDel:hover, 
+.additionalButAdd:hover, .additionalButDel:hover, 
+.additionalButAddAchievement:hover, .additionalButton:hover,
+.additionalButton:active, .additionalButton:focus{
+  color:#fff;
+  background-color:#000;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.but:focus,.but:active,#but:focus,#but:active,#uploadBut:active,#uploadBut:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+
+
+
+/* Green rect */
+.rightTitle2 {
+  position:absolute;
+  font-size: 3.6vmin;
+  font-weight: normal;    
+  top:0.3vmin;
+  margin-left:5.5vmin;
+  color: white;
+  z-index: 50;
+}
+
+.rectangle2 {
+  position: absolute;
+  top:-1vmin;
+  height: 9.5vmin;
+  width: 47vmin;
+  margin-left:12vw;
+  background-color: #78cc1f;
+  box-shadow:rgba(0, 0, 0, 0.2) -0.5vmin 0.7vmin 0.6vmin 0px;
+  z-index: 1;
+}
+
+.emptyRectangle2 {
+  position:relative;
+  height: 10vmin;
+  width: 46vmin;
+  margin-left:-1.5vw;
+  margin-top:2.5vh;
+  border:0.8vmin solid #fff;
+  box-shadow:rgba(0, 0, 0, 0.05) -0.5vmin 0.7vmin 0.6vmin 0px;
+  z-index: 1;
+}
+
+/* Div with all forms with black rectangles */
+.mainInfo{
+  margin-top: 18vh;
+  margin-left: 15vw; 
+  width: 50vw;
+}
+
+/* General info */
+.rectGeneral{
+  height: 6vmin;
+  width: 25vmin;
+  margin-right: 400vmin;
+  background-color: #000;
+  box-shadow:rgba(150, 107, 107, 0.15) -0.5vmin 0.7vmin 0.6vmin 0px;
+  z-index: 1;
+}
+
+.rectText{
+  font-size: 2.3vmin;
+  font-weight: normal;    
+  margin-left:2.25vmin;
+  padding-top: 1.5vmin;
+  color: white;
+}
+
+.infoRow{
+  padding: 0.2vw;
+}
+
+.generalFormStyle{
+  margin-top: 2vh; 
+  margin-left: 10vw; 
+  width: 45vw;
+}
+
+/* additional information */
+.rectAdditional{
+  height: 6.25vmin;
+  width: 28vmin;
+  margin-top:4.5vh;
+  background-color: #000;
+  box-shadow:rgba(150, 107, 107, 0.15) -0.5vmin 0.7vmin 0.6vmin 0px;
+  z-index: 1;
+}
+
+.additionalRectText{
+  font-size: 2.3vmin;
+  font-weight: normal;    
+  margin-left:2.25vmin;
+  padding-top: 1.8vmin;
+  color: white;
+}
+
+.additionalRow{
+  margin-left:1vw;
+  margin-top:0.025vh;
+  margin-bottom:0.05vh;
+}
+
+.additionalformStyle{
+  margin-top: -6.25vmin; 
+  margin-left: 28vmin; 
+  margin-bottom: 10vmin;
+  width: 63.8vmax;
+  height: auto;
+  border:0.2vmin solid #000;
+}
+
+.additionalButton{
+  color:#6c757d;
+  height:5.8vmin;
+  width:20vmin;
+  border:0;
+  font-size:2.3vmin;
+  background-color:#e9ecf1;
+}
+
+.additionalButtonTrue{
+  color:#6c757d;
+  height:5.8vmin;
+  margin-left: 1.9vmin; 
+  width:20vmin;
+  border:0;
+  font-size:2.3vmin;
+  background-color:#e9ecf1;
+}
+
+.additionalButtonFalse{
+  color:#fff;
+  height:5.8vmin;
+  margin-left: 1.9vmin; 
+  width:20vmin;
+  border:0;
+  font-size:2.3vmin;
+  background-color:#000;
+}
+
+.additionalButAddAchievement{
+  height:5.8vmin;
+  margin-top:0.5vh;
+  margin-left: 59vmax; 
+  border:0;
+  font-size:2.3vmin;
+  color:#6c757d;
+  background-color:#e9ecf1;
+  width:7vmin;
+}
+
+.additionalButAdd{
+  height:5.8vmin;
+  margin-top:4.5vh;
+  margin-left: 3vmin; 
+  border:0;
+  font-size:2.3vmin;
+  color:#6c757d;
+  background-color:#e9ecf1;
+  width:7vmin;
+}
+
+.additionalButDel{
+  height:5.8vmin;
+  margin-top:4.5vh;
+  margin-left: 1vmin; 
+  border:0;
+  font-size:2.3vmin;
+  color:#6c757d;
+  background-color:#e9ecf1;
+  width:7vmin;
+}
+
+.uploadBut{
+  margin-top: 3vh;
+  margin-bottom:3vh;
+}
+
+#additionalDropDown{
+  background-color: #e9ecf1; 
+  color:black; 
+  border: 3px solid white;
+  border-radius: 0;
+}
+
+.achievementText{
+  border-collapse: separate;
+  border: 3px solid white;
+  border-radius: 0%;
+  background-color: #e9ecf1; 
+  color:black;
+  height: 20vh;
+  width: 25vw;
+}
+
+.skillsText{
+  margin-top: 1vh;
+  margin-left: 3vmax;
+  font-size: 3vmin;
+  font-weight: 600;  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  color:#000;
+}
+
+.technologyText{
+  margin-top: 20vh;
+  margin-left: 3vmax;
+  font-size: 3vmin;
+  font-weight: 600;  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  color:#000;
+}
+
+.hideBut{
+  height:5.8vmin;
+  border:0;
+  font-size:2.3vmin;
+  color:#6c757d;
+  background-color:#e9ecf1;
+  width:10vmin;
+}
+
+.line{
+  font-family: "Times New Roman";
+  margin: 0 0.8vw;
+  color:#6c757d;
+  font-size: 1.9vw;
+}
+
+.but{
+  border-collapse: separate;
+  border: 3px solid white;
+  border-radius: 0%;
+  background-color: #e9ecf1; 
+  color:black;
+  height: 6vh;
+  width: 14vw;
+}
+
+.butUpload{
+  border-collapse: separate;
+  border: 3px solid white;
+  border-radius: 0%;
+  background-color: #e9ecf1; 
+  color:black;
+  height: 6vh;
+  width: 14vw;
+  margin-top:0.2vmax;
+}
+
+.form-control:focus {
+  border-color: #78cc1f;
+  box-shadow: 0 0 0 0;
+}
+
+/*own projects*/
+.ownformStyle{
+  margin-top: -6.3vmin; 
+  margin-left: 19.75vmin; 
+  width: 65vmax;
+  height: auto;
+  border:0.2vmin solid #000;
+}
+
+.ownRow{
+  margin-left:2vw;
+  margin-top:2vh;
+  margin-bottom:2vh;
+}
+
+.rectOwn{
+  height: 6.3vmin;
+  width: 19.75vmin;
+  margin-top:2vh;
+  background-color: #000;
+  box-shadow:rgba(150, 107, 107, 0.15) -0.5vmin 0.7vmin 0.6vmin 0px;
+  z-index: 1;
+}
+
+.ownText{
+  margin-top: 0.9vh;
+  padding-right: 0.8vw;
+  font-size: 3vmin;
+  font-weight: normal;  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  color:#6c757d;
+}
+
+.ownline{
+  font-family: "Times New Roman";
+  margin: 0 0.8vw 0 0.8vw;
+  color:#6c757d;
+  font-size: 1.9vw;
+}
+
+.ownFormStyle{
+  margin-top: 2vh; 
+  margin-left: 2vw; 
+  width: 45vw;
+  z-index: 0;
+}
+
+.ownButAdd{
+  height:5.8vmin;
+  margin-top:0.4vh;
+  margin-left: 3vmin; 
+  border:0;
+  font-size:2.3vmin;
+  color:#6c757d;
+  background-color:#e9ecf1;
+  width:7vmin;
+}
+
+.del{
+  border:2px solid #fff;
+}
+
+.ownButDel{
+  height:5.8vmin;
+  margin-top:0.4vh;
+  margin-left: 5vmin;
+  margin-right: -1vmin; 
+  border:0;
+  font-size:2.3vmin;
+  color:#6c757d;
+  background-color:#e9ecf1;
+  width:7vmin;
+}
+
+
+#ownUploadIcon{
+  font-size: 1.5vw; 
+  margin-left:3.5vmax;
+  margin-top:0.5vmax; 
+}
+
+/* autofill */
+body {
+  height: 10vh;
+}
+
+.react-autosuggest__container {
+  position: relative;
+}
+
+.react-autosuggest__input {
+  border-collapse: separate;
+  border: 3px solid white;
+  border-radius: 0%;
+  background-color: #e9ecf1;
+  width: 14vw; 
+  color:black;
+  height: 6vh;
+  padding: 0 12px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.react-autosuggest__input:focus {
+  background-color: white;
+  border: 3px solid #78cc1f;
+  outline: none;
+}
+
+.react-autosuggest__container--open .react-autosuggest__input {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__container--open .react-autosuggest__suggestions-container {
+  display: block;
+  position: absolute;
+  top: 51px;
+  width: 16vw;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 2;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 1px 20px;
+}
+
+.react-autosuggest__suggestion:hover{
+  background-color: #78cc1f;
+  color:white;
+}
+
+.react-autosuggest__suggestion:hover .highlight{
+  color:white;
+}
+
+.react-autosuggest__suggestion:not(:first-child) {
+  border-top: 1px solid #ddd;
+}
+
+.react-autosuggest__suggestion--focused {
+  background-color: #0C7EAF;
+  color: #fff;
+}
+
+.suggestion-content {
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.name {
+  margin-left: 1vw;
+  line-height: 45px;
+}
+
+.highlight {
+  color: #78cc1f;
+  font-weight: bold;
+}
+
+.react-autosuggest__suggestion--focused .highlight {
+  color: #120000;
+}
+
+
+/*other...*/
+.hideReactJSX{
+  display: none;
+}  
+
+.buttonsReg {
+  position: relative;
+  margin-left: 55vmax;
+  margin-top: -2vmin;
+  margin-bottom: 3vmin;
+  align-self:center;
+  flex-direction: row;
+  z-index:1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+.createButtonReg{
+  height:7vmin;
+  width:17vmax;
+  border:0px;
+  font-size:3vmin;
+  color:#fff;
+  box-shadow:rgba(0, 0, 0, 0.2) -0.5vmin 0.7vmin 0.6vmin 0px;
+  background-color:#78cc1f;
+  display:inline;
+}
+
+.skipButtonReg{
+  height:7vmin;
+  width:14vmax;
+  border:0px;
+  font-size:3vmin;
+  color:#fff;
+  box-shadow: rgba(0, 0, 0, 0.2) -0.5vmin 0.7vmin 0.6vmin 0px;
+  background-color: black;
+  display:inline;
+}
+
+/* Upload */
+#uploadBut{
+width: 30vw;
+height: 10vh;
+border: 3px solid white;
+border-radius: 0%;
+background-color: #e9ecf1;
+color: #6c757d;
+padding-top: 3vh;
+}
+
+#thumb{
+display: 'inline-flex';
+border-radius: 2;
+border: 1px solid #eaeaea;
+margin-bottom: 8;
+margin-right: 8;
+width: 100;
+height: 100;
+padding: 4;
+box-sizing: border-box;
+}
+
+#thumbInner{
+display: flex;
+min-width: 0;
+overflow: hidden;
+}
+
+#uploadImg{
+display: block;
+width: auto;
+height:100%;
+}
+
+#thumbsContainer{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin-top: 16;
+}
+

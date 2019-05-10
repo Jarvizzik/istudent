@@ -3,14 +3,11 @@ module.exports = (sequelize, DataTypes) => {
   const StudentCourse = sequelize.define(
     "StudentCourse",
     {
-      courseID: DataTypes.INTEGER,
-      studentID: DataTypes.INTEGER
+      studentID: DataTypes.INTEGER,
+      courseID: DataTypes.INTEGER
     },
     {}
   );
-  StudentCourse.associate = function(models) {
-    StudentCourse.belongsTo(models.Student),
-    StudentCourse.belongsTo(models.Course)
-  };
+  StudentCourse.associate = function(models) {};
   return StudentCourse;
 };

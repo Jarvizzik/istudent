@@ -8,9 +8,18 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   Technology.associate = function(models) {
-    Technology.hasMany(models.StudentTechnology),
-    Technology.hasMany(models.VacancyTechnology),
-    Technology.hasMany(models.CourseTechnology)
+    Technology.belongsToMany(models.Student, {
+      through: models.StudentTechnology,
+      foreignKey: "technologyID"
+    });
+    Technology.belongsToMany(models.Vacancy, {
+      through: models.VacancyTechnology,
+      foreignKey: "technologyID"
+    });
+    Technology.belongsToMany(models.Course, {
+      through: models.CourseTechnology,
+      foreignKey: "technologyID"
+    });
   };
   return Technology;
 };

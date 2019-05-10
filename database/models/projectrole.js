@@ -8,7 +8,10 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   ProjectRole.associate = function(models) {
-    ProjectRole.hasMany(models.StudentHasManyRoles)
+    ProjectRole.belongsToMany(models.StudentProject, {
+      through: models.StudentHasManyRoles,
+      foreignKey: "roleID"
+    });
   };
   return ProjectRole;
 };

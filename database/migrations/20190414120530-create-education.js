@@ -16,6 +16,9 @@ module.exports = {
         allowNull: false,
         type: Sequelize.INTEGER
       },
+      course: {
+        type: Sequelize.INTEGER
+      },
       isFinished: {
         type: Sequelize.BOOLEAN,
         defaultValue: false

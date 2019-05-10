@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   Institution.associate = function(models) {
-    Institution.belongsTo(models.Education)
+    Institution.hasMany(models.Education)
   };
   return Institution;
 };

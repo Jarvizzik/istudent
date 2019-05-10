@@ -10,11 +10,23 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   Course.associate = function(models) {
-    Course.belongsTo(models.Company)
-    Course.hasMany(models.StudentCourse),
-    Course.hasMany(models.CourseSkill),
-    Course.hasMany(models.CourseTechnology),
-    Course.hasMany(models.CoursePartner)
+    Course.belongsTo(models.Company);
+    Course.belongsToMany(models.Student, {
+      through: models.StudentCourse,
+      foreignKey: "courseID"
+    });
+    Course.belongsToMany(models.Skill, {
+      through: models.CourseSkill,
+      foreignKey: "skillID"
+    });
+    Course.belongsToMany(models.Technology, {
+      through: models.CourseTechnology,
+      foreignKey: "technologyID"
+    });
+    Course.belongsToMany(models.Company, {
+      through: models.CourseTechnology,
+      foreignKey: "companyID"
+    });
   };
   return Course;
 };
