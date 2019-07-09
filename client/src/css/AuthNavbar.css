@@ -1,0 +1,191 @@
+.nav{
+  background-color:#fff;
+  position: fixed;
+  top:0;
+  width: 76vw;
+  height: 70px;
+  margin: 0px 12vw;
+  border-radius: 0 0 17px 17px;
+  z-index:100;
+  box-shadow:none;
+}
+
+.leftNav{
+  padding-left:10px;
+}
+
+.rightNav{
+  padding-right:10px;
+}
+
+.link{
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 58px; 
+}
+
+.cont{
+  width: 11vw;
+  margin: 0 0.2vw 0 0.2vw;
+  white-space: nowrap;
+}
+
+.comp{
+  background-color: #404040;
+}
+
+.stud{
+  background-color: #78cc1f;
+}
+
+.link:hover{
+  background-color:#78cc1f; 
+}
+
+.link:hover span{
+  color: #fff;
+}
+
+.link span{
+  color:#a1a1a1;
+  font-size: 1rem;
+  margin: 0 1.5vw;
+}
+
+
+.navName{ 
+  display: none; 
+}
+
+.staticNav{
+  color: #fff;
+  font-size: 1.2vw;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px; 
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.logo{
+  width:15vw;
+  height: 70px;
+  padding-left: 2vw;
+}
+
+.logoImg{
+  justify-content: center;
+  float:left;
+  width:2.5vw;
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 15px;
+}
+
+.logoTitle{
+  float:right;
+  width:10vw;
+  display: block;
+  line-height: 58px;
+  margin-top: 5px;
+  font-size: 2vw;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.a-logo{
+  color: #000;
+}
+
+.a-logo:hover{
+  color: #78cc1f;
+}
+
+@media only screen and (max-width: 1400px) {
+  .nav{
+      width:84%;
+      margin: 0px 8vw;
+  }
+
+
+}
+
+@media only screen and (max-width: 1025px) {
+  .nav{
+      width:100%;
+      margin: 0;
+  }
+
+  .logoImg{
+      height: auto;
+  }
+
+  .logoTitle{
+      font-size: 3vw;
+  }
+  
+}
+
+@media only screen and (max-width: 1023px) {
+  .logoImg{
+      height: auto;
+  }
+
+  .logoTitle{
+      font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 767.9px) {
+
+  .nav{
+      position: relative;
+      height: auto;  
+  }
+
+  .leftNav{
+      padding: 0px;
+  }
+
+  .rightNav{
+      padding: 0px;
+  }
+  
+  .navName{
+      color:#000;
+      font-size: 5vw;
+      margin-left: 7vw;
+      display: block;
+  }
+
+  .hideBlock{
+      display:none;
+  }
+
+  .link{
+      border-width: 0px 0px 2px 0px;
+      border-style: solid;
+      border-color: #f5f8fd;
+      text-align: initial;
+      vertical-align: initial;
+      line-height: initial; 
+  }
+
+  .link span{
+      color:#000;
+      font-size: 3vmin;
+      margin-left:9vw;
+  }
+
+  .navButton{
+      background-color:#78cc1f;
+      border:0px;
+      border-radius:0px;
+      height:60px;
+      width:75px;
+      margin-top:0vh;
+      margin-left:4vw;
+  }
+  
+}

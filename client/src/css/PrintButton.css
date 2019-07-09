@@ -1,0 +1,17 @@
+.print-button{
+    position: absolute;
+    right: 0;
+    margin-right: 5.2vw;
+    height: 4vh;
+    width:10vw;
+    background-color: #78cc1f;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    z-index: 10;
+}
+
+.print-button:hover{
+    cursor: pointer;
+}

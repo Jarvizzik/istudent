@@ -1,0 +1,165 @@
+.log {
+    position:relative;
+    width:22vmax;
+    height:43vmin;
+    padding: 1vw;
+    margin-left: 10vw;
+    margin-top: 3vh;
+    background-color: #fff;
+    border: 2px solid #78cc1f;
+    color: #000;
+}
+
+.logButton{
+    height:5.5vmin;
+    width:16vmax;
+    border:0px;
+    margin-left:2vw;
+    font-size:1.2vw;
+    color:#fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    background-color:#78cc1f;
+}
+
+.logButton:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.35);
+}
+
+/* Input form */
+
+.log-input{
+    margin-left: 0.3vw;
+    width: 18vmax;
+}
+
+.log-input2{
+    margin-left: 0.3vw;
+    width: 18vmax;
+}
+
+
+.log-form h4 {
+    color: #78cc1f;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.form-title{
+    margin-top: 2vh;
+}
+
+.forgot-text{
+    position: absolute;
+    white-space: nowrap;
+    margin-top: -4vh;
+    color: #78cc1f;
+    margin-left: 10.3vw;
+    font-size:1vw;
+}
+
+
+@media only screen and (max-width:1100px) and (min-height:1000px){
+    
+    .logButton{
+        font-size: 2vmax;
+        margin-right:2vw;
+    }
+
+    .forgot-text{
+        margin-top: -2vh;
+        margin-left: 13vw;
+        font-size: 1vmax;
+    }
+}
+
+@media only screen and (max-width:960px) and (min-height:1000px){
+
+    .logButton{
+        font-size: 2vmax;
+    }
+
+    .forgot-text{
+        margin-top: -3vh;
+        margin-left: 11vw;
+        font-size:1.2vmax;
+    }
+}
+
+@media only screen and (max-width: 767.9px) {
+    .log {
+        position:relative;
+        width:46vw;
+        height: 40vh;
+        margin:0;
+        margin-top: 5vh;
+    }
+
+    .logButton{
+        height:5.5vh;
+    }
+
+    .log-input{
+        margin-left: 2vw;
+        width: 33vw;
+    } 
+
+    .log-input2{
+        margin-left: 2vw;
+        width: 33vw;
+    }   
+
+    .logButton{
+        width:29vw;
+        margin-right:6.5vw;
+        font-size:2vh;
+    }
+
+    .forgot-text{
+        margin-left: 19vw;
+        font-size: 2vw;
+    }                           
+}
+
+
+@media only screen and (max-width: 450px) {
+    
+    .log {
+        position:relative;
+        width:70vw;
+        height: 40vh;
+        margin:0;
+        margin-top: 5vh;
+    }
+
+    .log-input{
+        margin-left: 2vw;
+        width: 60vw;
+    } 
+
+
+    .log-input2{
+        margin-left: 2vw;
+        width: 60vw;
+    }   
+
+    .logButton{
+        width:53vw;
+        margin-right:3vw;
+    }
+
+    .forgot-text{
+        margin-left: 37vw;
+        font-size: 3vw;
+    }                           
+}
+
+@media only screen and (max-height: 680px) {
+    .log{
+        margin:0;
+        height: 45vh;
+    }
+
+    .form-title{
+        margin-top: 0;
+    }                 
+}

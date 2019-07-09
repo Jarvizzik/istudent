@@ -1,0 +1,46 @@
+.profile {
+    position:relative;
+    background-color: #f5f8fd;
+    display: flex;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 20vh;
+    color: #000;
+}
+
+.profile-rightTitle {
+    position:absolute;
+    font-size: 3.6vmin;
+    font-weight: normal;    
+    top:0.3vmin;
+    margin-left:5.5vmin;
+    color: white;
+    z-index: 50;
+}
+  
+.profile-rectangle {
+    position: absolute;
+
+    height: 9.5vmin;
+    width: 30vmin;
+
+    background-color: #78cc1f;
+    box-shadow:rgba(0, 0, 0, 0.2) -0.5vmin 0.7vmin 0.6vmin 0px;
+    z-index: 1;
+}
+  
+.profile-emptyRectangle {
+    position:relative;
+    height: 10vmin;
+    width: 29vmin;
+    margin-left:-1.5vw;
+    margin-top:2.5vh;
+    border:0.8vmin solid #fff;
+    box-shadow:rgba(0, 0, 0, 0.05) -0.5vmin 0.7vmin 0.6vmin 0px;
+    z-index: 1;
+}
+

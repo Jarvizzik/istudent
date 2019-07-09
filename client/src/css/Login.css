@@ -1,0 +1,174 @@
+
+.main {
+  position:relative;
+  background-color: #f5f8fd;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: #000;
+}
+
+.topic {
+  display: grid;
+  flex-direction: row;
+  grid-template-areas:
+    'leftTitle rightTitle'
+    'pTitle pTitle';
+}
+
+.leftTitle {
+  float:left;
+  padding-top: 3vmin;
+  grid-area: leftTitle;
+  font-size: 2vmax;
+  font-weight: 740;
+  z-index: 5;
+  white-space: nowrap;
+}
+
+.shape {
+  float:right;
+  grid-area: rightTitle;
+}
+
+a{
+  color: #fff;
+}
+
+.rectangle {
+  position:relative;
+  height: 9vmin;
+  width: 12.6vmax;
+  margin-left:2px;
+  margin-bottom: 5vmin;
+  padding-top: 2vmin;
+  background-color: #78cc1f;
+  z-index: 1;
+}
+
+.emptyRectangle {
+  position:relative;
+  height: 9.2vmin;
+  width: 13vmax;
+  margin-left:1vmax;
+  border:0.4vmax solid #fff;
+  z-index: 1;
+}
+
+.rightTitle {
+  position:absolute;
+  font-size: 2vmax;
+  font-weight: 740;
+  top:0.1vmin;
+  margin-left:1.5vmax;
+  z-index: 50;
+}
+
+.pTitle {
+  grid-area: pTitle;
+  font-size: 1.7vmax;
+  padding-left:4vmin;
+}
+
+.buttonsMain {
+  position:absolute;
+  align-self:center;
+  top:77vh;
+  flex-direction: row;
+  display:inline;
+}
+
+.butMain{
+  border:none;
+  font-size:4vmin;
+  color:#fff;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 7vh;
+  box-shadow:rgba(0, 0, 0, 0.2) -0.5vmin 0.7vmin 0.6vmin 0px;
+}
+
+.butMain:hover{
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.but-stud{
+  padding: 2vmin 5.2vmin;
+  background-color:#78cc1f;
+}
+
+.but-comp{
+  padding: 2vmin 4vmin;
+  background-color: #404040;
+}
+
+
+@media only screen and (max-width: 767.9px)  {
+
+  .main {
+    min-height: 93vh;
+    justify-content: initial;
+    padding-top: 10vh;
+  }
+
+  .main-container{
+    padding-left: 15vw;
+  }
+
+  .buttonsMain {
+    position:absolute;
+    top:auto;
+    bottom: 0vh;
+    display:flex;
+  }
+  
+  .butMain{
+    float:left;
+    height:10vh;
+    width:50vw;
+    border:0px;
+    font-size:5vmin;
+    color:#fff;
+    box-shadow: rgba(0, 0, 0, 0.2) -0.5vmin 0.7vmin 0.6vmin 0px;
+  }
+
+  .but-comp{
+    background-color: #404040;
+  }
+
+  .but-stud{
+    background-color:#78cc1f;
+  }
+
+}
+
+/* mobile responsive buttons */
+@media only screen and (max-height: 830px) and (max-width: 767.9px) {
+  .main {
+    min-height: 92.7vmax;
+  }
+}
+@media only screen and (max-height: 737px) and (max-width: 767.9px) {
+  .main {
+    min-height: 91.7vmax;
+  }
+}
+@media only screen and (max-height: 668px) and (max-width: 767.9px) {
+  .main {
+    min-height: 91vmax;
+  }
+}
+@media only screen and (max-height: 641px) and (max-width: 767.9px) {
+  .main {
+    min-height: 90.5vmax;
+  }
+}
+@media only screen and (max-height: 569px) and (max-width: 767.9px) {
+  .main {
+    min-height: 89.5vmax;
+  }
+} 

@@ -1,0 +1,135 @@
+.bodybg{
+    position: absolute;
+    top:0;
+    background: #f5f8fd;
+    width:100%;
+    min-height: 100%;
+    height:auto;
+}
+.vacancies {
+    position:relative;
+    display: flex;
+    margin: 27vh 11vw;
+    padding-left: 6vw;
+    color: #000;
+}
+
+.cardDeck {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+.applyBtn {
+    margin: 0 200px; 
+    margin-bottom: 30px;
+    background-color: #78cc1f;
+    border: 0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 30px;
+    -webkit-box-shadow: -6px 8px 5px -1px rgba(0,0,0,0.19);
+    -moz-box-shadow: -6px 8px 5px -1px rgba(0,0,0,0.19);
+    box-shadow: -6px 8px 5px -1px rgba(0,0,0,0.19);
+}
+
+.reqs {list-style: none}
+
+.reqs li span{
+    position: absolute;
+    font-size: 16px;
+}
+
+.reqs li::before {
+    font-size: 50px;
+    content: "•"; 
+    color: #78cc1f;
+    display: inline-block; 
+    width: 0.5em;
+    margin-top: -0.5em;
+    margin-left: -0.4em;
+}
+
+
+.inner-form {
+    position: absolute;
+    top:17vh;
+    left: 20.2vw;
+    width: 60%;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 0.5vh;
+    border-bottom: 1px solid #000;
+  }
+  
+  .inner-form .input-field {
+    height: 50px;
+  }
+  
+  .inner-form .input-field input {
+    height: 100%;
+    background-color: #f5f8fd;
+    color: #78cc1f;
+    border-radius: .5px;
+    border: 0;
+    display: block;
+    width: 100%;
+    padding: 0 32px;
+    font-size: 20px;
+  }
+  
+  .inner-form .input-field input.placeholder {
+    color: #9a9a9a;
+    font-size: 20px;
+  }
+  
+  .inner-form .input-field input:-moz-placeholder {
+    color: #9a9a9a;
+    font-size: 20px;
+  }
+  
+  .inner-form .input-field input::-webkit-input-placeholder {
+    color: #9a9a9a;
+    font-size: 20px;
+  }
+  
+  *:focus {
+    outline: none;
+    }
+  
+  .inner-form .input-field.first-wrap {
+    width: 22%;
+  }
+  
+  .inner-form .input-field.second-wrap {
+    width: 20%;
+  }
+  
+  .inner-form .input-field.third-wrap {
+    width: 20%;
+  }
+  .inner-form .input-field.fourth-wrap {
+    width: 20%;
+  }
+
+  .inner-form .input-field.fifth-wrap {
+    width: 25%;
+  }
+  
+  .inner-form .input-field.sixth-wrap .btn-search {
+    height: 100%;
+    background-color: #f5f8fd;
+    white-space: nowrap;
+    border-radius: .5px;
+    margin-left: 60px;
+    font-size: 20px;
+    color: #fff;
+    transition: all .2s ease-out, color .2s ease-out;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  
